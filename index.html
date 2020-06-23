@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta data-n-head="true" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <link rel="shortcut icon" href="favicon.ico?v=2">
+            <title>&#26447;&#21543;&#35270;&#39057;</title>
+        <script src="/xs/skin/default/static/js/jquery-3.4.1.min.js"></script>
+    <script src="/xs/skin/default/static/js/layer.js"></script>
+    <link rel="stylesheet" href="/xs/skin/default/static/fullpage/fullpage.min.css">
+    <link rel="stylesheet" type="text/css" href="/xs/skin/default/static/css/desktop.css?v=1"  />
+    <script src="/xs/skin/default/static/fullpage/fullpage.min.js"></script>
+    <script src="/xs/skin/default/static/js/qrcode.min.js"></script>
+</head>
+<body>
+<div class="desktop">
+    <div class="fixed-bg">
+        <img class="load-img" data-load-src="/xs/skin/encode/desktop/bg.bnc" alt="">
+    </div>
+    <div class="fix-header">
+        <div class="left">
+            <img class="logo load-img" data-load-src="/xs/skin/encode/logo.bnc" alt="">
+            <span>&#26447;&#21543;&#35270;&#39057;</span>
+        </div>
+        <div class="right">
+            <a>无限资源</a>
+            <a>优质交友</a>
+            <a>专属特权</a>
+        </div>
+    </div>
+    <div id="fullpage" class="page">
+        <div class="section">
+            <div class="layout">
+                <div class="layout-left" style="margin-right: 10vw">
+                    <div class="app">
+                        <img class="fold ts-rotation1 load-img" data-load-src="/xs/skin/encode/desktop/section1-p2.bnc" alt="">
+                        <img class="fix load-img" data-load-src="/xs/skin/encode/desktop/section1-p.bnc" alt="">
+                        <img class="element ts-fade" src="/xs/skin/default/static/image/desktop/section1-element.png" alt="">
+                    </div>
+                </div>
+                <div class="layout-right">
+                    <div class="subject-warp">
+                        <div class="subject">&#38506;&#20276;&#20320;&#30340;&#21491;&#25163;&#21040;&#28145;&#22812;</div>
+                        <div class="subject-shadow"></div>
+                    </div>
+                    <div class="download-box">
+                        <div class="download">
+                            <div onclick="downloadIOS()">
+                                <img src="/xs/skin/default/static/image/desktop/download-ios.png" alt="">
+                            </div>
+                            <a href="javascript:void(0)" onclick="downloadAndroid()" download="name">
+                                <img src="/xs/skin/default/static/image/desktop/download-android.png" alt="">
+                            </a>
+                        </div>
+                        <div class="qrcode-warp">
+                            <div class="qrcode" id="qrcode1">
+                                <img class="qrcode-logo load-img" data-load-src="/xs/skin/encode/logo.bnc" alt=""/>
+                            </div>
+                            <span>Android&#25512;&#33616;&#20351;&#29992;UC&#27983;&#35272;&#22120;&#25195;&#30721;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section3">
+            <div class="layout">
+                <div class="layout-left" style="margin-right: 69px">
+                    <div class="subject-warp">
+                        <div class="subject" style="margin-top: 80px">开放社区不限车速</div>
+                        <div class="subject-shadow"></div>
+                    </div>
+                    <div class="app">
+                        <img class="fix load-img" data-load-src="/xs/skin/encode/desktop/section3-p1.bnc" alt="">
+                        <img class="rotation rotation2 load-img" data-load-src="/xs/skin/encode/desktop/section3-p2.bnc" alt="">
+                        <img class="element ts-fade" src="/xs/skin/default/static/image/desktop/section3-element1.png" alt="">
+                    </div>
+                </div>
+                <div class="layout-right" style="margin-top: 30vh">
+                    <div class="download-box">
+                        <div class="download">
+                            <div onclick="downloadIOS()"><img src="/xs/skin/default/static/image/desktop/download-ios.png" alt=""></div>
+                            <a href="javascript:void(0)"  onclick="downloadAndroid()"  download="name"><img src="/xs/skin/default/static/image/desktop/download-android.png" alt=""></a>
+                        </div>
+                        <div class="qrcode-warp">
+                            <div class="qrcode" id="qrcode3">
+                                <img class="qrcode-logo load-img" data-load-src="/xs/skin/encode/logo.bnc" alt=""/>
+                            </div>
+                            <span>Android推荐使用UC浏览器扫码</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section2">
+            <div class="layout">
+                <div class="layout-left" style="margin-right: 30px;margin-top: 30vh">
+                    <div class="download-box">
+                        <div class="download">
+                            <div onclick="downloadIOS()"><img src="/xs/skin/default/static/image/desktop/download-ios.png" alt=""></div>
+                            <a  href="javascript:void(0)"  onclick="downloadAndroid()"   download="name"><img src="/xs/skin/default/static/image/desktop/download-android.png" alt=""></a>
+                        </div>
+                        <div class="qrcode-warp">
+                            <div class="qrcode" id="qrcode2">
+                                <img class="qrcode-logo load-img" data-load-src="/xs/skin/encode/logo.bnc" alt=""/>
+                            </div>
+                            <span>Android&#25512;&#33616;&#20351;&#29992;UC&#27983;&#35272;&#22120;&#25195;&#30721;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-right">
+                    <div class="subject-warp">
+                        <div class="subject">精彩视频奉送不断</div>
+                        <div class="subject-shadow"></div>
+                    </div>
+                    <div class="app">
+                        <img class="load-img" data-load-src="/xs/skin/encode/desktop/section2-p1.bnc" alt="">
+                        <img class="element ts-fade" src="/xs/skin/default/static/image/desktop/section2-element.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    new fullpage('#fullpage', {
+        autoScrolling:true,
+        scrollHorizontally: true,
+        navigation:true
+    });
+    var app_link = "https://22xingba.best";
+    new QRCode(document.getElementById("qrcode1"), {
+        text: app_link,
+        width: 120,
+        height: 120,
+        colorDark : "#000000",
+        colorLight : "#ffffff",
+        correctLevel : QRCode.CorrectLevel.H
+    });
+    new QRCode(document.getElementById("qrcode2"), {
+        text: app_link,
+        width: 120,
+        height: 120,
+        colorDark : "#000000",
+        colorLight : "#ffffff",
+        correctLevel : QRCode.CorrectLevel.H
+    });
+    new QRCode(document.getElementById("qrcode3"), {
+        text: app_link,
+        width: 120,
+        height: 120,
+        colorDark : "#000000",
+        colorLight : "#ffffff",
+        correctLevel : QRCode.CorrectLevel.H
+    });
+    var qrcodeWarps = document.querySelectorAll('.qrcode-warp')
+    function downloadIOS(){
+        layer.msg('请用苹果手机相机扫码打开网址!');
+        qrcodeWarps.forEach(function (item) {
+            item.classList.add('animation')
+        })
+        setTimeout(function () {
+            qrcodeWarps.forEach(function (item) {
+                item.classList.remove('animation')
+            })
+        },1000)
+    }
+
+    function  downloadAndroid() {
+        layer.msg('请手机扫码打开网页下载!');
+        qrcodeWarps.forEach(function (item) {
+            item.classList.add('animation')
+        })
+        setTimeout(function () {
+            qrcodeWarps.forEach(function (item) {
+                item.classList.remove('animation')
+            })
+        },1000)
+    }
+
+</script>
+<script src="/xs/skin/default/static/js/crypto-js.js"></script>
+<script>
+    // decodeResource
+    CryptoJS.enc.u8array = {
+        stringify: function (wordArray) {
+            var words = wordArray.words;
+            var sigBytes = wordArray.sigBytes;
+            var u8 = new Uint8Array(sigBytes);
+            var byte;
+            for (var i = 0; i < sigBytes; i++) {
+                byte = (words[i >>> 2] >>> (24 - (i % 4) * 8)) & 0xff;
+                u8[i]=byte;
+            }
+            return u8;
+        },
+        parse: function (u8arr) {
+            var len = u8arr.length;
+            var words = [];
+            for (var i = 0; i < len; i++) {
+                words[i >>> 2] |= (u8arr[i] & 0xff) << (24 - (i % 4) * 8);
+            }
+            return CryptoJS.lib.WordArray.create(words, len);
+        }
+    };
+    // get image arraybuffer
+    function getFileData(url, callback, dom) {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', url);
+        xhr.responseType = 'arraybuffer';
+        xhr.onreadystatechange = function () {
+            if(xhr.readyState === 4 && xhr.status === 200){
+                callback(xhr.response,dom);
+            }
+        };
+        xhr.send(null);
+    }
+    // deal image data -> data-temp-url
+    function dealImg(data,dom) {
+        var byteArray = new Uint8Array(data);
+        var decodeU8 = decryptU8arry(byteArray); // decode
+        var dataUrl = URL.createObjectURL(new Blob([decodeU8]));
+        setDomData(dom,dataUrl)
+    }
+    // set dom data-temp-url
+    function setDomData(dom,dataUrl) {
+        var attrName;
+        switch(dom[0].tagName){
+            case'IMG':attrName = 'src';break;
+            case'VIDEO':attrName = 'poster';break;
+            default: attrName = 'poster';
+        }
+        dom.attr(attrName,dataUrl);
+    }
+    // decode key
+    var key =CryptoJS.enc.Utf8.parse("525202f9149e061d");
+    var contentWA;
+    // decode func
+    function decryptU8arry(array) {
+        contentWA = CryptoJS.enc.u8array.parse(array);
+        var dcBase64String = contentWA.toString(CryptoJS.enc.Base64);
+        var decrypted = CryptoJS.AES.decrypt(dcBase64String, key, {mode:CryptoJS.mode.ECB,padding:CryptoJS.pad.NoPadding});
+        return CryptoJS.enc.u8array.stringify(decrypted);
+    }
+
+
+    // 【 decode start 】
+    function decodeResource() {
+        $('.load-img').each(function(){
+            var src = $(this).data('load-src');
+            getFileData(src,dealImg,$(this))
+        })
+    }
+    decodeResource();
+</script>
+</html>

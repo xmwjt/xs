@@ -1,0 +1,321 @@
+
+
+.desktop{
+    color: #fff;
+    background-color: #fff;
+}
+.desktop .fixed-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*background-image: url('./../image/desktop/bg.jpg');*/
+    /*background-size: 100% 100%;*/
+}
+.mobile .fixed-bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.desktop .fix-header{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+.desktop .fix-header .left{
+    font-size: 36px;
+}
+.desktop .fix-header .right{
+    font-size: 20px;
+}
+.desktop .fix-header .right a{
+    margin:  0 40px;
+}
+.desktop .fix-header .logo{
+    height: 70px;
+    vertical-align: text-top;
+    position: relative;
+    top: -5px;
+    margin-right: 5px;
+}
+.desktop .section{
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    overflow: hidden;
+}
+.desktop .section.dark .fp-tableCell{
+    background-color: rgba(0,0,0,0.7);
+}
+.desktop .section .fp-tableCell{
+    background-color: rgba(0,0,0,0.2);
+}
+.desktop .layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.desktop .layout.col{
+    flex-direction: column;
+}
+.desktop .layout-top{
+    margin-top: 2vh;
+}
+.desktop .layout-bottom{
+    margin-top: 4vh;
+}
+
+.desktop .layout-left{
+    margin-right: 15vw;
+}
+.desktop .section .title{
+    font-size: 80px;
+    font-weight: bold;
+    transition: 0.5s transform ease-in-out 0.2s;
+    transform: translateY(-300px);
+    letter-spacing: 2px;
+}
+
+
+
+.desktop .section .subject-warp{
+    margin-top: 80px;
+    position: relative;
+}
+.desktop .section.section2 .subject-warp{
+    margin-bottom: -30px;
+    position: relative;
+    margin-left: -5vh;
+    margin-top: 60px;
+}
+.desktop .section.section3 .subject-warp{
+    margin-top: 40px;
+    margin-bottom: -30px;
+}
+.desktop .section .subject-warp .subject-shadow{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 78vh;
+    height: 13vh;
+    background-image: url("./../image/mobile/dialog-shadow.png");
+    background-size: 100% 100%;
+    z-index: -1;
+    transition: 0.2s transform ease-in-out 0.2s;
+    /*transform: translateX(250px);*/
+}
+.desktop .section.section2 .subject-warp .subject-shadow{
+    width: 56vh;
+    height: 9vh;
+}
+
+.desktop .section.section3 .subject-warp .subject-shadow{
+    width: 55.4vh;
+    height: 9vh;
+    right: 5px;
+}
+
+.desktop .section .subject{
+    font-size: 5vh;
+    padding-top: 4vh;
+    box-sizing: border-box;
+    width: 80vh;
+    height: 20vh;
+    transition: 0.4s transform ease-in-out 0.2s;
+    transform: translateX(-500px);
+    background-image: url("./../image/desktop/dialog.png");
+    background-size: 100% auto;
+}
+.desktop .section.section2 .subject-warp .subject{
+    width: 58vh;
+    height: 14vh;
+    padding-top: 3vh;
+    font-size: 4vh;
+}
+.desktop .section.section3 .subject-warp .subject{
+    width: 57vh;
+    height: 14vh;
+    padding-top: 3vh;
+    font-size: 4vh;
+}
+.desktop .section .download-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+}
+.desktop .section .qrcode-warp{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    padding: 5px 10px;
+    margin-top: -10px;
+}
+.desktop .section .qrcode-warp .qrcode{
+    width: 140px;
+    height: 140px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.desktop .section .qrcode-warp .qrcode .qrcode-logo{
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+}
+.desktop .section .qrcode-warp.animation{
+    animation-name: shadow;
+    animation-duration: 0.5s;
+    animation-iteration-count:2;
+}
+@keyframes shadow {
+    0% {box-shadow: 0 0 10px rgb(249,61,115);}
+    50% {box-shadow: 0 0 30px rgb(249,61,115);}
+    100% {box-shadow: 0 0 10px rgb(249,61,115);}
+}
+.desktop .section .download{
+    margin-right: 91px;
+}
+.desktop .section .download a{
+    display: block;
+}
+
+.desktop .section .download img{
+    width: 271px;
+    height: 71px;
+    margin-bottom: 22px;
+    cursor: pointer;
+}
+
+.desktop .section .app{
+    margin-top: 15px;
+    /*transition: 0.55s transform ease-in-out 0.30s;*/
+    /*transform: translateY(400px);*/
+    position: relative;
+    display: flex;
+}
+
+.desktop .section .app img{
+    height: 65vh;
+}
+.desktop .section .app img.fold{
+    /*top: -2.5vh;*/
+    /*left: -20vh;*/
+    height: 70vh;
+    z-index: -1;
+}
+.desktop .section .app img.fix{
+    position: absolute;
+    left: 20vh;
+    top: 2.5vh;
+}
+.desktop .section.section3 .app{
+    margin-left: 30px;
+    justify-content: flex-end;
+}
+.desktop .section.section3 .app img.fix{
+    left: auto;
+    right: 20vh;
+    top: 1vh;
+    z-index: 1;
+}
+.desktop .section .app img.element{
+    position: absolute;
+    top: 16vh;
+    right: 24.6vh;
+    z-index: 1;
+}
+.desktop .section.section2 .app img.element{
+    position: absolute;
+    top: 10vh;
+    right: auto;
+    left: -11vh;
+    height: 53vh;
+    z-index: -1;
+}
+.desktop .section.section3 .app img.element{
+    top: 0;
+    right: -4vh;
+}
+
+.desktop .section.active .subject,.desktop .section.active .subject-shadow{
+    transform: translateX(0);
+}
+.desktop .section.active .app{
+    transform: translateY(0);
+}
+.desktop .section.active .rotation{
+    transform: rotate(0deg) !important;
+}
+.rotation{
+    transition: 0.6s transform ease-in-out 0.30s;
+    transform: rotate(45deg);
+}
+.section.active .ts-rotation1 {
+    animation: 0.6s rotation1 0.3s both;
+    transform-origin: bottom;
+}
+.section.active .ts-fade {
+    animation: 0.75s fade 0.6s both;
+}
+@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+@keyframes rotation1 {
+    from {transform: rotate(15deg)}
+    to {transform: rotate(0deg)}
+}
+.rotation.rotation1{
+    transform: rotate(15deg);
+    transform-origin: bottom;
+}
+.rotation.rotation2{
+    transform: rotate(-9deg);
+    transform-origin: bottom;
+}
+.rotation.rotation3{
+    transform: rotate(15deg);
+    transform-origin: bottom;
+}
+#fp-nav ul li, .fp-slidesNav ul li{
+    height: 100% !important;
+    margin: 15px 5px;
+}
+#fp-nav ul li a, .fp-slidesNav ul li a{
+    height: 30px;
+}
+#fp-nav ul li a.active, .fp-slidesNav ul li a.active{
+    height: 50px;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background: rgba(255,255,255,0.3);
+    border-radius: 5px !important;
+    width: 10px !important;
+    height: 30px !important;
+    margin: -2px 0 0 -2px !important;
+    top: 0 !important;
+    transition: none;
+}
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span{
+    background: #fff;
+    height: 50px !important;
+    margin: -2px 0 0 -2px !important;
+}
